@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Polygon</title>
+</head>
+<body>
+    <header>
+        <div class="buttons-group">
+            <button id="createBtn">Создать</button>
+            <button id="saveBtn">Сохранить</button>
+            <button id="resetBtn">Сбросить</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="buffer-zone zone" id="bufferZone"></div>
+        <div class="work-zone zone" id="workZone">
+            <div class="scale x-scale" id="xScale"></div>
+            <div class="scale y-scale" id="yScale"></div>
+            <svg id="workSvg" width="20000" height="20000" preserveAspectRatio="xMinYMin meet" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+                        <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#ccc" stroke-width="1" />
+                    </pattern>
+                </defs>
+                <rect id="gridRect" x="0" y="0" width="20000" height="20000" fill="url(#grid)" />
+            </svg>
+        </div>
+    </main>
+</body>
+</html>
