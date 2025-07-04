@@ -1,4 +1,4 @@
-import './components/polygonComponents.js';
+import './../components/polygonComponents';
 import { handleBufferDrop, handleMouseDown, handleMouseMove, handleWorkDrop, handleZoom } from './eventHandlers.js';
 import { createPolygon, polygonMap } from './polygonManager.js';
 import './scriptLocalStorage.js';

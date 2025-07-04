@@ -1,4 +1,4 @@
 import "./style.css";
 import "./components/polygonComponents.js";
-import "./script.js";
-import "./scriptLocalStorage.js";
+import "./shared/script";
+import "./shared/scriptLocalStorage";
